@@ -1,0 +1,12 @@
+Flask
+connexion
+Flask-Injector
+fastavro
+connexion[swagger-ui]
+Flask-SQLAlchemy
+Flask-marshmallow
+marshmallow-sqlalchemy
+marshmallow
+asyncio
+aiohttp
+paramiko

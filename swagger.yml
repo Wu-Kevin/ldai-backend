@@ -1,0 +1,34 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger Rest Article
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+# Paths supported by the server application
+paths:
+  /channel:
+    get:
+      operationId: ldai_backend.read_all_channels
+      tags:
+        - Channel
+      summary: Read all channels sorted alphabetically
+      description: Read all channels sorted alphabetically
+      responses:
+        200:
+          description: Successful read channel set operation
+          schema:
+            type: array
+            items:
+              properties:
+                channel_id:
+                  type: integer
+                  description: Id the channel
+                channel:
+                  type: string
+                  description: Name of the channel
